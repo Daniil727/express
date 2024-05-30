@@ -4,8 +4,7 @@ const indexRouter = require ("./routes/index")
 const app = express();
 const port = 3001;
 
-const { init, User, Todo} = require("./models/init");
-
+const { init } = require("./models/init");
 
 app.use(express.json());
 app.use("/index", indexRouter );
@@ -18,7 +17,7 @@ app.listen(port, async () => {
 module.exports = app;
 // запросы на User 
 
-// const UserService = new (require("./controllers/UserController"))
+ //const UserService = new (require("./controllers/UserController"))
 
 
 // app.get("/users", UserController.get())

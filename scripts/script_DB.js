@@ -1,5 +1,5 @@
 const {sequelize} = require ("../DB");
-const User = require("../models/User");
+// const User = require("../models/User");
 
 
 (async()=>{
